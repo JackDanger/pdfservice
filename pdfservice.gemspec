@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pdfservice}
-  s.version = "1.1.1"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Danger Canty"]
@@ -14,6 +14,21 @@ Gem::Specification.new do |s|
   s.email = %q{gitcommit@6brand.com}
   s.extra_rdoc_files = [
     "README.markdown"
+  ]
+  s.files = [
+    ".gems",
+     "README.markdown",
+     "Rakefile",
+     "VERSION",
+     "config.ru",
+     "config/database.yml",
+     "lib/pdf_service.rb",
+     "lib/pdf_service_client.rb",
+     "lib/pdf_service_server.rb",
+     "lib/pdfservice.rb",
+     "pdfservice.gemspec",
+     "test.rb",
+     "vendor/wkhtmltopdf-amd64-0.10.0_beta5-static-amd64"
   ]
   s.homepage = %q{http://github.com/JackDanger/pdfservice}
   s.rdoc_options = ["--charset=UTF-8"]

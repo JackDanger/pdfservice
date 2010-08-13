@@ -19,6 +19,9 @@ be rendered in WebKit and returned to you as a PDF document.
     client = PdfService::Client.new 'http://my-pdfservice-app.heroku.com'
     pdf_content = client.render '<html></html>'
 
+Or, straight from a terminal:
+
+    curl -X POST http://my-pdfservice-app.heroku.com/ -d '<html></html>' > file.pdf
 
 Patches welcome, forks celebrated.
 

@@ -35,7 +35,7 @@ def wkhtmltopdf
   executable = `which wkhtmltopdf`.chomp
 
   if '' == executable.to_s && RUBY_PLATFORM =~ /x86_64-linux/
-    executable = File.join File.dirname(__FILE__), '..', 'bin', 'wkhtmltopdf-amd64-0.10.0_beta5-static-amd64'
+    executable = File.join File.dirname(__FILE__), '..', 'vendor', 'wkhtmltopdf-amd64-0.10.0_beta5-static-amd64'
   end
   executable
 end

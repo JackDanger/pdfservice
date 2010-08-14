@@ -14,7 +14,7 @@ module PdfService
 
     def render html
       start do |http|
-        http.post '/', html
+        http.post('/', html).read_body
       end
     end
 

@@ -7,7 +7,6 @@ begin
     gem.email = "gitcommit@6brand.com"
     gem.homepage = "http://github.com/JackDanger/pdfservice"
     gem.authors = ["Jack Danger Canty"]
-    gem.add_dependency "sinatra", ">= 1.0.0"
     gem.add_development_dependency "shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

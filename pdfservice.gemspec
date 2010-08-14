@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Danger Canty"]
-  s.date = %q{2010-08-12}
+  s.date = %q{2010-08-13}
   s.description = %q{Run your own html-to-pdf server for free on Heroku.com}
   s.email = %q{gitcommit@6brand.com}
   s.extra_rdoc_files = [
@@ -41,14 +41,11 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<sinatra>, [">= 1.0.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
     else
-      s.add_dependency(%q<sinatra>, [">= 1.0.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
     end
   else
-    s.add_dependency(%q<sinatra>, [">= 1.0.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
   end
 end

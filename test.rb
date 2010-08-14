@@ -36,7 +36,9 @@ class PdfServiceTest < Test::Unit::TestCase
       assert last_response.ok?
     end
     should "return the PDF document" do
-      assert last_response.body =~ /^%PDF-1.4/
+      body = last_response.body
+      body.force_encoding('binary') if body.respond_to?(:force_encoding)
+      assert body =~ /^%PDF-1\.4/
     end
   end
 end

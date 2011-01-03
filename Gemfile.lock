@@ -13,4 +13,4 @@ PLATFORMS
 
 DEPENDENCIES
   newrelic_rpm
-  sinatra
+  sinatra (= 1.1.2)

@@ -1,6 +1,6 @@
 ## Resources
 require 'rubygems'
-gem 'sinatra', '~> 1.0.0'
+gem 'sinatra', '~> 1.1.2'
 require 'sinatra'
 
 

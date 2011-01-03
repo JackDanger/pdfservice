@@ -4,8 +4,18 @@ gem 'sinatra', '~> 1.0.0'
 require 'sinatra'
 
 
-
 ## Application
+
+
+configure :production do
+  ENV['APP_ROOT'] ||= File.dirname(__FILE__)
+  begin
+    $:.unshift "#{ENV['APP_ROOT']}/vendor/plugins/newrelic_rpm/lib"
+    require 'newrelic_rpm'
+  rescue LoadError
+  rescue
+  end
+end
 
 get '/' do
   %Q{

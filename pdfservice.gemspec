@@ -5,23 +5,23 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pdfservice}
-  s.version = "1.1.0"
+  s.version = "1.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Danger Canty"]
-  s.date = %q{2010-08-13}
+  s.date = %q{2011-01-03}
   s.description = %q{Run your own html-to-pdf server for free on Heroku.com}
   s.email = %q{gitcommit@6brand.com}
   s.extra_rdoc_files = [
     "README.markdown"
   ]
   s.files = [
-    ".gems",
+    "Gemfile",
+     "Gemfile.lock",
      "README.markdown",
      "Rakefile",
      "VERSION",
      "config.ru",
-     "config/database.yml",
      "lib/pdf_service.rb",
      "lib/pdf_service_client.rb",
      "lib/pdf_service_server.rb",
@@ -33,14 +33,14 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/JackDanger/pdfservice}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{lightwight HTML-to-PDF server running on Heroku.com}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<shoulda>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
